@@ -1,0 +1,11 @@
+<h1>Ultimos Posts</h1>
+
+<%= link_to "Nuevo Post", new_post_path %>
+
+<% @posts.each do |post| %>
+	
+	<div class="post">
+		<%= link_to post.title, post %>
+	</div> 
+	
+<% end %>
